@@ -15,7 +15,7 @@ const server = app.listen(port, () => {
 const io: Server = new Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: ["http://54.237.83.120","http://34.199.77.210:80"] // Aquí debes agregar la URL de origen de tu aplicación cliente
+    origin: "*" // Aquí debes agregar la URL de origen de tu aplicación cliente
   }
 });
 
